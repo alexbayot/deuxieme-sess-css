@@ -1,3 +1,31 @@
 footer{
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 50px 0px;
+    text-align: center;
+    .Copyright{
+        font-size: 14px;
+        display: block;
+    }
+    .designed{
+        font-size: 13px;
+        display: block;
+        margin-top: 10px;
+        .boostrap{
+            color: #1dc8cd;
+            
+        }
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        &:hover{
+            color: #1dc8cd;
+        }
+    }
+    .footer-nav{
+        margin-top: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }

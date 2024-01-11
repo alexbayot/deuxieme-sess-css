@@ -1,5 +1,4 @@
 .about-us{
-    background-color: #eff5f5;
     z-index: 10000;
     padding-bottom: 70px;
     h1{
@@ -46,17 +45,18 @@
 .map{
     padding-top: 60px;
     padding-bottom: 55px;
-    background: #eff5f5;
     p{
         line-height: 24px;
     }
 }
 .planning{
     padding-top: 60px;
+    padding-bottom: 25px;
     .wrapper{
         div{
             display: flex;
-            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
             i{
                 font-size: 40px;
                 color:#1dc8cd;
@@ -66,6 +66,272 @@
                 margin: 0;
             }
         }
+    }
+}
+.chart{
+    padding-top: 60px;
+    i{
+        font-size: 30px;
+        color: #1dc8cd;
+        padding-right: 10px;
+    }
+}
+.call-to-action{
+    text-align: center;
+    color: white;
+    padding: 80px 15px;
+    background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../images/call-to-action-bg.jpg) fixed center/cover;
+    p{
+        line-height: 25px;
+    }
+    a{
+        padding: 8px 35px;
+    }
+    a:hover{
+        background-color: #1dc8cd;
+        border: 2px solid #1dc8cd;
+        color: white;
+    }
+}
+.white-box{
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+    padding:50px 30px;
+    margin-bottom: 20px;
+}
+.more-features{
+    text-align: center;
+    padding-bottom: 60px;
+    h1{
+        margin:0;
+    }
+    .wrapper{
+            a{
+                display: block;
+                text-decoration: none;
+                color: black;
+                font-weight: 700;
+                font-size: 18px;
+                margin-top: 15px;
+            }
+            i{
+                color: #1dc8cd;
+                font-size: 40px;
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+}
+.brands{
+    img{
+        padding: 15px 0;
+        opacity: 0.5;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+.pricing{
+    padding-bottom: 70px;
+    h4{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+    .payment{
+        text-align: center;
+    }
+    .dolar{
+        color: #1dc8cd;
+    }
+    .amount{
+        color: #1dc8cd;
+        font-size: 46px;
+    }
+    .month{
+        color: #bababa;
+    }
+    i{
+        color: #1dc8cd;
+        padding-right: 10px;
+        line-height: 30px;
+    }
+    .button{
+        background-color: #515e61;
+        border: 2px solid #515e61;
+        &:hover{
+            color: white
+            ;
+        }
+    }
+}
+details{
+    color:#000;
+    font-size: 16px;
+    p{
+            margin-bottom: 0;
+        }
+}
+summary{
+    border-bottom: 1px solid #D9D9D9;
+    padding: 20px 60px 20px 0;
+    margin-bottom: 2px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    list-style-type: none;
+    position: relative;
+    
+}
+details[open] > summary {
+    color:#1dc8cd;
+  }
+summary::before{
+    content: "+";
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+}
+details[open]{
+    summary::before{
+        content: "-";
+        position: absolute;
+        right: 10px;
+        font-size: 30px;
+    }
+}
+.our-team{
+    padding-bottom: 60px;
+    text-align: center;
+    .staff{
+        height: 260px;
+        overflow: hidden;
+    }
+    h3{
+        margin-bottom: 8px;
+    }
+    .job-title{
+        font-style: italic;
+        font-size: 13px;
+        color: black;
+    }
+    .social-media{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        i{
+            color: #777;
+            &:hover{
+                color: #1dc8cd;
+            }
+        }
+    }
+}
+.gallery{
+    .box{
+        width: 100%;
+        height: 362px;
+        overflow: hidden;
+        transition: 0.3s all ease-in-out;
+        img{
+            &:hover{
+                scale: 1.1;
+                transition: 0.3s all ease-in-out;
+            }
+        }
+    }
+}
+.contact{
+    h1{
+        color: #1dc8cd;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 36px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+        color: #888;
+        margin-bottom: 30px;
+    }
+    .socials{
+        a{
+            display: inline-block;
+            background: #fff;
+            color: #1dc8cd;
+            color: #1dc8cd;
+            width: 36px;
+            height: 36px;
+            border: 1px solid #1dc8cd;
+            border-radius: 50%;
+            text-align: center;
+            transition: 0.3s all ease-in-out;
+                &:hover{
+                    background-color: #1dc8cd;
+                    color: white;
+                    transition: 0.3s all ease-in-out;
+                }
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+    .location{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        i{
+            color: #1dc8cd;
+            font-size: 22px;
+            margin-right: 20px;
+        }
+        span{
+            line-height: 28px;
+            font-size: 14px;
+        }
+    }
+}
+.contact-form{
+    margin-top: 30px;
+    .button{
+        margin-bottom: 50px;
+        background: linear-gradient(45deg, #1de099, #1dc8cd);
+        padding: 10px 20px;
+        &:hover{
+            color: white;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        input{
+            padding: 8px 0;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            font-size: 14px;
+            border: 1px solid #ced4da;
+        }
+        textarea{
+            padding: 8px 0;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            font-size: 14px;
+            border: 1px solid #ced4da;
+        }
+    }
+}
+.border{
+    border: 2px solid #1dc8cd;
+    .button{
+        background: linear-gradient(45deg, #1de099, #1dc8cd);
+        border: none;
+
     }
 }
 .italic-subtitle{
@@ -102,4 +368,7 @@ hr{
 .title{
     font-size: 2rem;
     font-weight: 400;
+}
+.background{
+    background: #eff5f5;
 }
