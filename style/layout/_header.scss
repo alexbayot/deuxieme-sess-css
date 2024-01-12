@@ -3,6 +3,15 @@ header{
     height: 100vh;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    nav{
+        a{
+            text-decoration: none; 
+            color: white;
+            font-size: 14px;
+            margin-right: 20px;  
+        }
+        
+    }
     .logo{
         color: white;
         font-weight: 400;
@@ -16,7 +25,6 @@ header{
         height: 30px;
         display: flex;
         flex-direction: column;
-
         div{
             height: 3px;
             background-color: #fff;
@@ -37,12 +45,12 @@ header{
         left: 0;
         top: 0;
         right: 0;
-        z-index: 10;
+        z-index: 100;
         padding: 20px 10px;
 
     }
     .header-txt{
-        padding-top: 10px;
+        padding-top: 80px;
         color: white;
         text-align: center;
         font-weight: 400;
@@ -53,15 +61,18 @@ header{
             font-size: 28px;
         }
     }
-    img{
+    [alt="product-screen-1"]{
         position: absolute;
         bottom: -24%;
         left: 50%;
         translate: -50%;
-        overflow-clip-margin: content-box;
-        overflow: clip;
         box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
-        z-index: 1;
+        
+    }
+    [alt="product-screen-3"]{
+        display: none;
+    }
+    [alt="product-screen-2"]{
         display: none;
     }
 }
@@ -84,5 +95,53 @@ img{
         background-color: white;
         color: #1dc8cd;
         transition: 0.3s all ease-in-out;
+    }
+}
+
+@media screen and (min-width: 768px){
+    header{
+        [alt="product-screen-3"]{
+            display:inline-block;
+            position: absolute;
+            bottom: -26%;
+            left: calc(50% - 374px);
+            box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
+        }
+        [alt="product-screen-2"]{
+            display: inline-block;
+            position: absolute;
+            bottom: -18%;
+            left: calc(50% - 154px);
+            box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
+        }   
+        [alt="product-screen-1"]{
+            position: absolute;
+            bottom: -10%;
+            left: calc(50% + 240px);
+            box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
+            
+        }
+        .burger-menu{
+            display: none;
+        }
+    }
+    @media screen and (min-width: 998px){
+        .nav-txt{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            width: 60%;
+        }
+        header{
+            .header-txt{
+                h2{
+                font-size: 48px;
+                } 
+                h4{
+                    font-size: 24px;
+                }
+            }
+        }
     }
 }
