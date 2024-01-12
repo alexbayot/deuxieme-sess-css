@@ -36,4 +36,20 @@ footer{
             width: 60%;
         }
     }
+    @media screen and (min-width: 998px){
+        
+        .footer{
+            display: flex;
+            margin: 0 auto;
+            width: 60%;
+        }
+        .footer-nav{
+            width: 50%;
+            font-size: 14px;
+        }
+        .footer_txt{
+            text-align: left;
+            width: 50%;
+        }
+    }
 }

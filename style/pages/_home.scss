@@ -80,7 +80,7 @@
     }
 }
 .map{
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 55px;
     p{
         line-height: 24px;
@@ -142,10 +142,12 @@
 }
 .chart{
     padding-top: 60px;
+    padding-bottom: 20px;
     i{
-        font-size: 30px;
+        font-size: 64px;
         color: #1dc8cd;
         padding-right: 10px;
+        float: left;
     }
     @media screen and (min-width: 768px){
         img{
@@ -274,9 +276,13 @@
     }
     .payment{
         text-align: center;
+        position: relative;
     }
     .dolar{
         color: #1dc8cd;
+        position: absolute;
+        top: 10px;
+        left: calc(50% - 65px);
     }
     .amount{
         color: #1dc8cd;
@@ -489,12 +495,12 @@ details[open]{
             background: #fff;
             color: #1dc8cd;
             color: #1dc8cd;
-            width: 36px;
-            height: 36px;
-            border: 1px solid #1dc8cd;
-            border-radius: 50%;
             text-align: center;
             transition: 0.3s all ease-in-out;
+            border: 1px solid #1dc8cd;
+            border-radius: 50%;
+            padding: 8px;
+            margin-right: 10px;
                 &:hover{
                     background-color: #1dc8cd;
                     color: white;
@@ -502,6 +508,7 @@ details[open]{
                 }
             i{
                 font-size: 18px;
+                
             }
         }
     }
@@ -553,6 +560,7 @@ details[open]{
             margin-bottom: 50px;
             background: linear-gradient(45deg, #1de099, #1dc8cd);
             padding: 10px 20px;
+            cursor: pointer;
             &:hover{
                 color: white;
             }
